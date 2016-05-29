@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mj2_lib_32" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/mj2_lib_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/mj2_lib_32" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O1" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-D__STDC_CONSTANT_MACROS" />
+			<Add directory="ffmpeg-20160510-git-9486de5-win32-dev/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lpthread" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/avcodec.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/avdevice.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/avfilter.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/avformat.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/avutil.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libavcodec.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libavdevice.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libavfilter.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libavformat.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libavutil.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libpostproc.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libswresample.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/libswscale.dll.a" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/postproc.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/swresample.lib" />
+			<Add library="ffmpeg-20160510-git-9486de5-win32-dev/lib/swscale.lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
