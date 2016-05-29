@@ -15,7 +15,7 @@ if (name.endsWith(".mj2")) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return tryPlugIn("HandleMJ2Files_", path);<br>
 }<br>
 
-The reading speed for this plug-in on an i7-4790 CPU running at 3.6GHz was about 30 to 35 MBPS i.e. it will read a 250MB file in about 7 to 8 seconds.
+The pluging has the settings ti change the number of threads it uses to process the file. The settings can be accessed undet he plugins menu in ImageJ or FIJI. A maximum of 20 threads can be set. The deafault value is 6. The reading speed for this plug-in (with 6 threads) on an i7-4790 CPU running at 3.6GHz was about 30 to 35 MBPS i.e. it will read a 1GB file in about 30 to 35 seconds.
 
 Lagnajeet Pradhan
 
